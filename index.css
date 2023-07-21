@@ -3,3 +3,237 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+	top:0;
+    right: -120%;
+	width:100%;
+    height: 100vh;/*ナビの高さ*/
+	background:#233B6C;
+    /*動き*/
+	transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+    right: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999; 
+    width: 100%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+	list-style: none;
+    text-align: center;
+}
+
+#g-nav li a{
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+	position:fixed;
+    z-index: 9999;/*ボタンを最前面に*/
+	top:0px;
+	right: 0px;
+	cursor: pointer;
+    width: 50px;
+    height:50px;
+    background-color: #233B6C;
+    border-radius: 10px 0px 0px 10px;
+}
+
+/*×に変化*/	
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+	background-color: #fff;
+  	width: 45%;
+  }
+
+  .openbtn span:nth-of-type(1) {
+	top:15px;	
+}
+
+.openbtn span:nth-of-type(2) {
+	top:23px;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:31px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+.openbtn p{
+    position: fixed;
+    color: #fff;
+    top:35px;
+    right: 9px;
+    font-size: 10px;
+}
+
+.openbtn.active p{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+}
+li{
+    color: #fff;
+}
+
+li h2{
+    color: #fff ;
+    text-decoration: underline;
+}
+
+nav{
+    background-color: #233B6C;
+}
+  a{
+    transition: color 0.3s;
+    color: blue;
+  }
+  li h2:hover {
+    transition: color 0.3s;
+    color: #fdb933;
+}
+li h2:active {
+  color: #661d9b;
+}
+  a:hover{
+    color : #fcbb76;
+  }
+  a:active{
+    color: #661d9b;
+  }
+  body{
+    color: #fff;
+    background-color: #222;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .pagetop:hover, .pagetop:hover .pagetop__arrow {
+        border-color: #fdb933;
+    }
+}
+
+  .pagetop {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #fff;
+    border: solid 2px #233B6C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.pagetop__arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #233B6C;
+    border-right: 3px solid #233B6C;
+    transform: translateY(20%) rotate(-45deg);
+}
+
+body{
+    height: 1000px;
+}
+
+.hero img{
+    max-width: 100%;
+}
+.box{
+    display: flex;
+    margin: 10%;
+    background-color: #233B6C;
+}
+.boxA{
+    padding: 5%;
+    border-width: 3px;
+border-style: solid;
+border-color: black;
+    width: 50%;
+    text-align: center;
+}
+.boxA img{
+    width: 100%;
+    text-align: center;
+    border-radius: 50%;
+    border-width: 3px;
+border-style: solid;
+border-color: black;
+}
+
+.boxA p{
+    font-size: 200%;
+}
+.prof{
+    padding: 10% 0;
+}
+.tyui{
+    padding-top: 10%;
+    font-size: 8px;
+}
+.boxB{
+    width: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+}
