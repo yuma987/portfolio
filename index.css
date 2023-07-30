@@ -161,7 +161,7 @@ li h2:active {
   }
   body{
     color: #fff;
-    background-color: #222;
+    background-color: #333;
   }
   @media (hover: hover) and (pointer: fine) {
     .pagetop:hover, .pagetop:hover .pagetop__arrow {
@@ -191,13 +191,28 @@ li h2:active {
     border-right: 3px solid #233B6C;
     transform: translateY(20%) rotate(-45deg);
 }
-
-body{
-    height: 1000px;
+.hero{
+    position: relative;
+    margin-bottom: 10%;
 }
-
 .hero img{
-    max-width: 100%;
+    width: 100%;
+}
+.hero h1{
+    font-size: 7em;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.hero p{
+    font-size: 3em;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+
+}
+.profile h1{
+    text-align: center;
 }
 .box{
     display: flex;
@@ -232,8 +247,250 @@ border-color: black;
     font-size: 8px;
 }
 .boxB{
+    padding-top: 10%;
     width: 50%;
     border-width: 3px;
     border-style: solid;
     border-color: black;
+}
+.boxB h2{
+    font-size: 2em;
+    text-align: center;
+    padding: 10%;
+}
+.boxB li{
+    font-size: 1.5em;
+    list-style: none;
+    line-height: 3em;
+}
+.work{
+}
+.work h1{
+    text-align: center;
+    margin-bottom: 10%;
+}
+.main{
+    color: #000;
+    text-align: center;
+    width: 80%;
+    margin: 10% 10%;
+    background-color: #fff;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+}
+.main img{
+    width: 100%;
+}
+.main h2{
+    padding: 3%;
+    font-size: 2em;
+}
+.main p{
+    font-size: 20px;
+    padding: 5%;
+}
+.worksA{
+    display: flex;
+    color: #000;
+
+}
+.workA{
+    text-align: center;
+    width: 35%;
+    margin: 0 10%;
+    background-color: #fff;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+}
+.workA img{
+    width: 100%;
+}
+.workA p{
+    font-size: 20px;
+    padding: 5%;
+}
+.workA h2{
+    padding: 3%;
+    font-size: 2em;
+}
+.workB{
+    text-align: center;
+    width: 35%;
+    background-color: #fff;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+}
+.workB h2{
+    padding: 3%;
+    font-size: 2em;
+}
+.workB img{
+    width: 100%;
+}
+.workB p{
+    font-size: 20px;
+    padding: 5%;
+}
+.worksB{
+    display: flex;
+    color: #000;
+}
+.workC{
+    text-align: center;
+    width: 35%;
+    margin: 10% 10%;
+    background-color: #fff;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+}
+.workC h2{
+    color: #000;
+    padding: 3%;
+    font-size: 2em;
+}
+.workC img{
+    width: 100%;
+}
+.workC p{
+    font-size: 20px;
+    padding: 5%;
+}
+.workD{
+    text-align: center;
+    width: 35%;
+    margin: 10% 0%;
+    background-color: #fff;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+}
+.workD h2{
+    padding: 3%;
+    font-size: 2em;
+}
+.workD img{
+    width: 100%;
+}
+.workD p{
+    font-size: 20px;
+    padding: 5%;
+}
+.contact{
+    position: relative;
+    text-align: center;
+    height: 400px;
+}
+.contact h2{
+    padding-bottom:1%;
+}
+.contacts{
+    margin-top: 2%;
+    position:absolute;
+    left: 20%;
+    background-color: #fff;
+    width: 60%;
+    height: 60%;
+}
+input{
+    text-align: center;
+}
+form{
+    display:flex;
+  flex-flow: column;
+  color: #000;
+}
+input{
+    margin-left: 40%;
+    width: 20%;
+}
+textarea{
+    margin-left:20%;
+    width: 60%;
+}
+button{
+    margin-left: 40%;
+    width: 20%;
+}
+footer{
+    text-align: center;
+    color: #888;
+    background-color: #222;
+}
+.bun img{
+    width: 30%;
+}
+.bun{
+    display: flex;
+    margin-bottom: 5%;
+}
+.bun p{
+    padding-top: 3%;
+    font-size: 1.5em;
+}
+.bun2{
+    display: flex;
+    margin-bottom: 5%;
+}
+.bun2 img{
+    width: 20%;
+    margin-right: 5%;
+}
+.bun2 video{
+    width: 20%;
+}
+.bun2 p{
+    padding-top: 3%;
+    font-size: 1.5em;
+}
+.bun3{
+    display: flex;
+}
+.bun3 img{
+    width: 30%;
+    margin-right: 5%;
+}
+.bun3 p{
+    padding-top: 3%;
+    font-size: 1.5em;
+}
+.bun4{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.bun4 img{
+    width: 30%;
+    margin-right: 5%;
+}
+.bun4 p{
+    padding-top: 3%;
+    font-size: 1.5em;
+}
+.bun4 video{
+    width: 40%;
+}
+
+.bun4 a {
+    font-size: 2em;
+    padding-left: 39%;
+}
+a{
+    color: white;
+}
+.bun5 img{
+    width: 30%;
+    
+}
+.bun5{
+    display: flex;
+    margin-bottom: 5%;
+}
+.bun5 p{
+    padding-top: 7%;
+    font-size: 1.5em;
+    padding-right: 9%;
 }
