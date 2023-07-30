@@ -7,7 +7,6 @@
 html{
     scroll-behavior: smooth;
 }
-
 #g-nav{
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     position:fixed;
@@ -526,3 +525,33 @@ a{
 .gengo{
     font-size: 2em;
 }
+.my-social {
+    grid-area: social;  /* mainタグのGridテンプレートの「social」に配置 */
+    list-style: none; /* リストの・が邪魔なので消します */
+    display: flex; /* .my-social内部をフレキシブル表示に切り替え（標準で横並びになります） */
+    margin-top: 1.5rem; /* 上部に1.5文字分の外部余白を設定 */
+    justify-content: center;
+  }
+  /* class="my-social"の中のli */
+.my-social li {
+    line-height: 1; /* 文字高さを1文字分とする */
+    margin-right: 1rem; /* 右側に1文字分の外側余白をつける */
+    font-size: 2rem; /* アイコン(文字)のサイズを2文字分とする */
+  }
+  /* class="my-social"の中のliの中のa */
+.my-social li a {
+    display: inline-block; /* リンクテキストをインラインブロック要素として表示 */
+    text-decoration: none;  /* リンクテキストの装飾をなくす */
+    color: var(--text-color);  /* 文字色をデフォルトのリンクカラーからこの文書の文字色へ変更 */
+    cursor: pointer; /* この要素にマウスオーバーしたとき、マウスカーソルを指に変更 */
+    /*transition: 1s color; 文字色が変化する場合、１秒かけて変化させる定義 */
+    transition: 0.5s transform, 0.5s color;
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  /* class="my-social"の中のliの中のaにマウスカーソルが乗った時 */
+.my-social li a:hover {
+    color: transparent; /* 背景に設定したグラデーションが表示されるように文字色を透明（transparent）にする */
+    transform: scale(1.5); /* 要素を1.5倍に変形させます */
+  }
