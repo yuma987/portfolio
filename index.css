@@ -497,3 +497,32 @@ a{
 .neta{
     margin: 0%;
 }
+.bun6 img{
+    width: 50%;
+    
+}
+.bun6{
+    display: flex;
+    margin-bottom: 5%;
+}
+.bun6 p{
+    padding-top: 7%;
+    font-size: 1.5em;
+    padding-right: 9%;
+}
+.bun7 img{
+    width: 20%;
+    
+}
+.bun7{
+    display: flex;
+    margin-bottom: 5%;
+}
+.bun7 p{
+    padding-top: 7%;
+    font-size: 1.5em;
+    padding-right: 9%;
+}
+.gengo{
+    font-size: 2em;
+}
